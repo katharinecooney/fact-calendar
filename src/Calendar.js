@@ -6,9 +6,17 @@ class Calendar extends Component {
   constructor(props){
     super(props);
     this.state = {
-      month: 3,
-      day: 16
+      month: 1,
+      day: 1
     }
+    this.getDate = this.getDate.bind(this);
+  }
+
+  getDate(newMonth, newDay){
+    this.setState({
+      month: newMonth,
+      day: newDay
+    })
   }
 
   componentDidMount(){
@@ -22,7 +30,7 @@ class Calendar extends Component {
     return (
       <div>
         <h1>hi! i love you!</h1>
-        <DateForm />
+        <DateForm getDate={this.getDate} />
       </div>
     )
   }
