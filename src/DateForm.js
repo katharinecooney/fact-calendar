@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import './DateForm.css';
 
 class DateForm extends Component {
+  
   constructor(props){
     super(props);
     this.state = {
-      month: null,
-      day: null
+      month: '',
+      day: ''
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -27,24 +28,41 @@ class DateForm extends Component {
   render() {
     return (
       <form className="DateForm" onSubmit={this.handleSubmit}>
-        <label htmlFor="month">Month</label>
-      <input  
-          value={this.state.month} 
-          onChange={this.handleChange} 
-          type="text" 
-          name="month"
-          id="month"
-        />
-        <label htmlFor="day">Day</label>
-        <input  
-          value={this.state.day} 
-          onChange={this.handleChange} 
-          type="text" 
-          name="day"
-          id="day"
-        />
-        
+
+
+
+        <div className="DateForm-date">
+          <div className="DateForm-month">
+            <label htmlFor="month">Month</label>
+            <input  
+              value={this.state.month} 
+              onChange={this.handleChange} 
+              type="text" 
+              name="month"
+              id="month"
+              placeholder="MM"
+            />
+          </div>
+          <span className="DateForm-divider">/</span>
+          <div className="DateForm-day">
+            <label htmlFor="day">Day</label>
+            <input  
+              value={this.state.day} 
+              onChange={this.handleChange} 
+              type="text" 
+              name="day"
+              id="day"
+              placeholder="DD"
+            />
+          </div>
+          
+        </div>
         <button type="submit">Submit</button>
+        
+         
+        
+        
+        
       </form>
     )
   }

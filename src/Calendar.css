@@ -1,10 +1,81 @@
 .Calendar {
-  width: 70vw;
+  width: 90vw;
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(3, 4, 44);
+}
+
+.Calendar > h1 {
+  margin: 0 0 10px 0;
+  font-family: 'Fascinate Inline', cursive;
+  text-transform: uppercase;
+  color: rgb(223, 8, 8);
+  text-shadow: 3px 3px 2px rgba(255,255,255,0.64);
+  font-size: 2rem;
+}
+
+.Calendar > span {
+  font-size: 1rem;
 }
 
 .Calendar-page {
-  border: 1px solid black;
-  background-color: white;
-  height: 70vh;
+  box-shadow: 9px 14px 21px -8px rgba(0,0,0,0.65);
+  background: rgb(244,241,242);
+  background: linear-gradient(214deg, rgba(244,241,242,1) 0%, rgba(255,255,255,1) 55%);
+  height: 60vh;
+  overflow: auto;
+  border-radius: 5%;
+  margin-top: 30px;
 }
+
+/* .Calendar-spiral {
+  background-color: rgb(255, 0, 0, 0);
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: -60px;
+  z-index: 2;
+}
+
+.Calendar-spiral div {
+  background-color: black;
+  height: 100%;
+  width: 15px;
+} */
+
+.Calendar-fact {
+  font-size: 1.25rem;
+  padding: 1.5rem;
+  font-style: italic;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .Calendar {
+    width: 70vw;
+  }
+
+  .Calendar-fact {
+    padding: 2rem;
+  }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+  .Calendar-fact {
+    font-size: 2rem;
+    padding: 2rem;
+  }
+ } 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .Calendar-fact {
+    font-size: 2.5rem;
+    padding: 2.5rem;
+  }
+}  
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */

@@ -11,8 +11,8 @@ class Calendar extends Component {
   constructor(props){
     super(props);
     this.state = {
-      month: null,
-      day: null,
+      month: '',
+      day: '',
       fact: ''
     }
     this.getDate = this.getDate.bind(this);
@@ -45,10 +45,18 @@ class Calendar extends Component {
   render() {
     return (
       <div className="Calendar">
-        <h1>Get a Fact!</h1>
+        <h1>Pick a date, any date...</h1>
+        <span>(and learn a new fun fact!)</span>
+        <div className="Calendar-spiral">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
         <div className="Calendar-page">
-          <DateForm month={this.props.month} day={this.props.day} getDate={this.getDate} />
-          <p>{this.state.fact}</p>
+          <DateForm getDate={this.getDate} />
+          <p className="Calendar-fact">{this.state.fact}</p>
         </div>
         
       </div>

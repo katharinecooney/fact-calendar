@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(19, 243, 243, 0.911);
+  background: rgb(0,212,255);
+  background: linear-gradient(214deg, rgba(0,212,255,1) 24%, rgba(122,250,255,1) 47%, rgba(122,250,255,1) 64%, rgba(0,222,255,1) 87%, rgba(0,212,255,1) 100%);
 }
 
