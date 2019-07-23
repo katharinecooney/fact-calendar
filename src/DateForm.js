@@ -43,7 +43,6 @@ class DateForm extends Component {
               placeholder="MM"
             />
           </div>
-          <span className="DateForm-divider">/</span>
           <div className="DateForm-day">
             <label htmlFor="day">Day</label>
             <input  

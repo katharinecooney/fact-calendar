@@ -56,7 +56,10 @@ class Calendar extends Component {
           </div>
         <div className="Calendar-page">
           <DateForm getDate={this.getDate} />
-          <p className="Calendar-fact">{this.state.fact}</p>
+          <div className="Calendar-factContainer">
+            <p className="Calendar-fact">{this.state.fact}</p>
+          </div>
+          
         </div>
         
       </div>

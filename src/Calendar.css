@@ -16,6 +16,8 @@
 
 .Calendar > span {
   font-size: 1rem;
+  padding-bottom: 30px;
+  display: inline-block;
 }
 
 .Calendar-page {
@@ -28,24 +30,25 @@
   margin-top: 30px;
 }
 
-/* .Calendar-spiral {
+.Calendar-spiral {
   background-color: rgb(255, 0, 0, 0);
-  height: 50px;
+  height: 40px;
   display: flex;
   justify-content: space-around;
-  margin-bottom: -60px;
+  margin-bottom: -55px;
   z-index: 2;
 }
 
 .Calendar-spiral div {
   background-color: black;
   height: 100%;
-  width: 15px;
-} */
+  width: 9px;
+  transform: rotate(10deg);
+}
 
 .Calendar-fact {
-  font-size: 1.25rem;
-  padding: 1.5rem;
+  font-size: 1.5rem;
+  padding: 2rem;
   font-style: italic;
 }
 
@@ -58,14 +61,35 @@
 
   .Calendar-fact {
     padding: 2rem;
+    font-size: 1.75rem;
+  }
+
+  .Calendar > h1 {
+    font-size: 2.5rem;
+  }
+  
+  .Calendar > span {
+    font-size: 1.5rem;
   }
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
  @media only screen and (min-width: 768px) {
+  .Calendar {
+    width: 70vw;
+  }
+
   .Calendar-fact {
-    font-size: 2rem;
     padding: 2rem;
+    font-size: 1.75rem;
+  }
+
+  .Calendar > h1 {
+    font-size: 2.5rem;
+  }
+  
+  .Calendar > span {
+    font-size: 1.5rem;
   }
  } 
 
@@ -74,6 +98,14 @@
   .Calendar-fact {
     font-size: 2.5rem;
     padding: 2.5rem;
+  }
+
+  .Calendar > h1 {
+    font-size: 4rem;
+  }
+  
+  .Calendar > span {
+    font-size: 2rem;
   }
 }  
 

@@ -2,7 +2,7 @@
   background: rgb(255,0,53);
   background: linear-gradient(214deg, rgba(255,0,53,1) 0%, rgba(242,2,2,1) 55%);
   width: 100%; 
-  font-size: 1.25rem;
+  font-size: 1.75rem;
 }
 
 .DateForm-date {
@@ -11,16 +11,11 @@
   align-items: center;
   height: 100%;
   margin: 0 auto;
-  padding: 15px 0 0 0;
+  padding: 35px 0 0 0;
+  font-family: 'Fascinate Inline', cursive;
+  text-transform: uppercase;
 }
 
-.DateForm-divider {
-  font-size: 2rem;
-  display: block;
-  align-self: flex-end;
-  margin: 10px 0;
-  color: white;
-}
 
 ::placeholder {
   color: white;
@@ -30,43 +25,45 @@
 .DateForm-day {
   display: flex;
   flex-direction: column;
+  margin: 0 20px;
 }
+
 
 .DateForm-month input,
 .DateForm-day input {
   border: none;
   outline: none;
   background-color: rgba(255, 0, 0, 0);
-  margin: 10px 5px;
+  margin: 0 auto;
   height: 50px;
   width: 80px;
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: white;
   box-sizing: border-box;
 }
 
-
-
 .DateForm button {
-  padding: 12px;
-  border: none;
-  display: inline-block;
-  align-self: flex-end;
-  border-radius: 5px;
-  border: 2px solid rgb(9, 11, 110);
-  background-color: rgba(255, 0, 0, 0);
-  color: white;
-  margin-bottom: 15px;
+  width: 100%;
   text-transform: uppercase;
-  font-size: .75rem;
-  outline: none;
+  font-size: 1rem;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {
-  
-}  */
+ @media only screen and (min-width: 600px) {
+  .DateForm {
+    font-size: 2rem;
+  }
+
+  .DateForm-month input,
+  .DateForm-day input {
+    font-size: 1.75rem;
+  }
+
+  .DateForm button {
+    font-size: 1.25rem;
+  }
+}  
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -80,15 +77,7 @@
     font-size: 2rem; 
   }
 
-  .DateForm-date button {
-    height: 50px;
-    width: 50px;
-    border: none;
-    margin-top: 15px; 
-    border-radius: 5px;
-    background-color: green;
-    color: white;
-  }
+  
 
   .DateForm-divider {
     font-size: 2.25rem;
@@ -99,7 +88,21 @@
 }  
 
 /* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px) {...}  */
+ @media only screen and (min-width: 992px) {
+  .DateForm {
+    font-size: 2.5rem;
+  }
+
+  .DateForm-month input,
+  .DateForm-day input {
+    font-size: 2.5rem;
+  }
+
+  .DateForm button {
+    padding: 16px;
+    font-size: 1.5rem;
+  }
+}  
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* @media only screen and (min-width: 1200px) {...} */
