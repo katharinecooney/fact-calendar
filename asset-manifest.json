@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fact-calendar/static/css/main.2f49e687.chunk.css",
+    "main.js": "/fact-calendar/static/js/main.edb7f46a.chunk.js",
+    "main.js.map": "/fact-calendar/static/js/main.edb7f46a.chunk.js.map",
+    "runtime~main.js": "/fact-calendar/static/js/runtime~main.223b6ad7.js",
+    "runtime~main.js.map": "/fact-calendar/static/js/runtime~main.223b6ad7.js.map",
+    "static/js/2.38991e27.chunk.js": "/fact-calendar/static/js/2.38991e27.chunk.js",
+    "static/js/2.38991e27.chunk.js.map": "/fact-calendar/static/js/2.38991e27.chunk.js.map",
+    "index.html": "/fact-calendar/index.html",
+    "precache-manifest.ecc28b00980543ef1d881e62fab2e2f9.js": "/fact-calendar/precache-manifest.ecc28b00980543ef1d881e62fab2e2f9.js",
+    "service-worker.js": "/fact-calendar/service-worker.js",
+    "static/css/main.2f49e687.chunk.css.map": "/fact-calendar/static/css/main.2f49e687.chunk.css.map"
+  }
+}
