@@ -28,15 +28,17 @@ class Calendar extends Component {
 
   getFact(){
     let {day, month} = this.state;
-    axios.get(`http://numbersapi.com/${month}/${day}/date`)
+    axios.get(`https://numbersapi.com/${month}/${day}/date`)
       .then(res => this.setState({
         fact: res.data
       }))
   }
 
+  
+
   componentDidMount(){
     let {day, month} = this.props;
-    axios.get(`http://numbersapi.com/${month}/${day}/date`)
+    axios.get(`https://numbersapi.com/${month}/${day}/date`)
     .then(res => this.setState({
       fact: res.data
     }))
