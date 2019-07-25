@@ -28,7 +28,7 @@ class Calendar extends Component {
 
   getFact(){
     let {day, month} = this.state;
-    axios.get(`https://numbersapi.com/${month}/${day}/date`)
+    axios.get(`http://numbersapi.com/${month}/${day}/date`)
       .then(res => this.setState({
         fact: res.data
       }))
@@ -38,7 +38,7 @@ class Calendar extends Component {
 
   componentDidMount(){
     let {day, month} = this.props;
-    axios.get(`https://numbersapi.com/${month}/${day}/date`)
+    axios.get(`http://numbersapi.com/${month}/${day}/date`)
     .then(res => this.setState({
       fact: res.data
     }))
